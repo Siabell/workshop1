@@ -35,7 +35,7 @@ What that command does? git pull origin master
 creation screenshot
 
   
-![](file-spy/images/archetype.PNG)
+![](file-spy/images/archetype.png)
   
 
 1. What do means the -B option in the command?
@@ -190,3 +190,5 @@ Now within lifecycle, there are phases. For examples, some of the phases that ma
 - But this time you should knew that the application detect events in a folder when you add new files and print on the screen all the files with the `text/csv` extension. Test the application using the examples files. Take the output screenshot.
 
 ![](file-spy/images/exec2.PNG)
+
+- Integrantes: Fabian Bohorquez, Valentina Siabatto
