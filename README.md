@@ -42,7 +42,7 @@ creation screenshot
 
   
 
-> Ejecutar en modo no interactivo (batch), este utilizará automáticamente los valores predeterminados en lugar de pedirlos.
+> Ejecutar en modo no interactivo (batch), este utilizarÃ¡ automÃ¡ticamente los valores predeterminados en lugar de pedirlos.
 
   
 
@@ -50,7 +50,7 @@ creation screenshot
 
   
 
-> Define una propiedad del sistema, es utilizada para personalizar el comportamiento de los complementos de maven, las propiedades definidas en la línea de comandos también están disponibles como propiedades que se utilizaran en un POM de maven.
+> Define una propiedad del sistema, es utilizada para personalizar el comportamiento de los complementos de maven, las propiedades definidas en la lÃ­nea de comandos tambiÃ©n estÃ¡n disponibles como propiedades que se utilizaran en un POM de maven.
 
   
 
@@ -58,11 +58,11 @@ creation screenshot
 
   
 
->- groupId: Este indica el único identificador de la organización que creo el proyecto, por lo que sigue las reglas de nombres de paquetes.
+>- groupId: Este indica el Ãºnico identificador de la organizaciÃ³n que creo el proyecto, por lo que sigue las reglas de nombres de paquetes.
 
   
 
->- artifactId: Este es el nombre único del artefacto primario creado (sirve como el identificador local del grupo del proyecto maven), este generalmente es un archivo jar.
+>- artifactId: Este es el nombre Ãºnico del artefacto primario creado (sirve como el identificador local del grupo del proyecto maven), este generalmente es un archivo jar.
 
   
 
@@ -70,11 +70,11 @@ creation screenshot
 
   
   
-![](file-spy/images/tree.PNG)
+![](file-spy/images/tree.png)
 
   
 
-> Podemos ver en la carpeta de fuentes(src) la organización creada en el groupId; se genera un archivo pom dónde está los dependencias del proyecto y por último se crea una carpeta donde se harán las pruebas pertinentes al proyecto que también está en src.
+> Podemos ver en la carpeta de fuentes(src) la organizaciÃ³n creada en el groupId; se genera un archivo pom dÃ³nde estÃ¡ los dependencias del proyecto y por Ãºltimo se crea una carpeta donde se harÃ¡n las pruebas pertinentes al proyecto que tambiÃ©n estÃ¡ en src.
 
   
 
@@ -94,7 +94,7 @@ creation screenshot
 
   
 
->Esto significa que el proyecto está en desarrollo, es decir no es version 1.0 aun.
+>Esto significa que el proyecto estÃ¡ en desarrollo, es decir no es version 1.0 aun.
 
   
 
@@ -102,7 +102,7 @@ creation screenshot
 
   
 
-> Es el empaquetamineto que tendrá la carpeta del proyecto según el tipo de proyecto que se este realizando (jar, war, ear, etc).
+> Es el empaquetamineto que tendrÃ¡ la carpeta del proyecto segÃºn el tipo de proyecto que se este realizando (jar, war, ear, etc).
 
   
 
@@ -110,7 +110,7 @@ creation screenshot
 
   
 
->Dependency tags: Esta es la sección de dependencias para centralizar la información, proporciona la capacidad de manipular artefactos, puede copiar y / o desempaquetar artefactos de repositorios locales o remotos a una ubicación específica.
+>Dependency tags: Esta es la secciÃ³n de dependencias para centralizar la informaciÃ³n, proporciona la capacidad de manipular artefactos, puede copiar y / o desempaquetar artefactos de repositorios locales o remotos a una ubicaciÃ³n especÃ­fica.
 
   
 
@@ -144,36 +144,36 @@ Now within lifecycle, there are phases. For examples, some of the phases that ma
 
 >- clean = maneja la limpieza del proyecto.
 
->- default = maneja la implementación del proyecto.
+>- default = maneja la implementaciÃ³n del proyecto.
 
->- Site = se encarga de la creación de la documentación.
+>- Site = se encarga de la creaciÃ³n de la documentaciÃ³n.
 
 - Using the terminal execute the command `mvn compile`. Take the output screenshot. What is this command using for? What are transitive dependencies?
 
   
-![](file-spy/images/compile.PNG)
+![](file-spy/images/compile.png)
 
->- mvn compile: compila el código fuente del proyecto.
+>- mvn compile: compila el cÃ³digo fuente del proyecto.
 
->- Transitive dependencies: Maven evita la necesidad de descubrir y especificar las bibliotecas que requieren sus propias dependencias mediante la inclusión automática de dependencias transitivas, Esta función se facilita al leer los archivos de proyecto de sus dependencias en repositorios remotos especificados, así el proyecto "hereda" todas las dependencias que son dependencias de sus "padres" o dependencias directas, sin límite para la cantidad de niveles desde donde se puede recopilar las dependencias.
+>- Transitive dependencies: Maven evita la necesidad de descubrir y especificar las bibliotecas que requieren sus propias dependencias mediante la inclusiÃ³n automÃ¡tica de dependencias transitivas, Esta funciÃ³n se facilita al leer los archivos de proyecto de sus dependencias en repositorios remotos especificados, asÃ­ el proyecto "hereda" todas las dependencias que son dependencias de sus "padres" o dependencias directas, sin lÃ­mite para la cantidad de niveles desde donde se puede recopilar las dependencias.
 
 - Using the terminal execute the command `mvn package`. Take the output screenshot. What is this command using for?
 
   
-![](file-spy/images/package.PNG)
+![](file-spy/images/package.png)
 
->- mvn package: toma el código compilado y lo empaqueta en su formato distribuible ( como jar).
+>- mvn package: toma el cÃ³digo compilado y lo empaqueta en su formato distribuible ( como jar).
 
 - Using the terminal execute the command `mvn install`. Take the output screenshot. What is this command using for?
 
   
-![](file-spy/images/install.PNG)
+![](file-spy/images/install.png)
 
 >- mvn install: instala el paquete en el repositorio local, para usarlo como una dependencia en otros proyectos localmente.
 
 - Generate a new maven project in other folder using the maven command line tools, this project should has as groupId "edu.eci" and as artifactId "another-maven-project". Take the output screenshot.
 
-![](file-spy/images/another-maven.PNG)
+![](file-spy/images/another-maven.png)
 
 - Replace the code of the App.java class with the following code and do all the necessary steps to compile the code.
 
